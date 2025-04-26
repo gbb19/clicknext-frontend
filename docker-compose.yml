@@ -1,0 +1,16 @@
+name: $APP_NAME
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+      args:
+        - USER=${CONTAINER_USER:-user}
+        - UID=${HOST_UID:-1000}
+        - GID=${HOST_GID:-${HOST_UID:-1000}}
+    ports:
+      - $APP_PORT:3000
+    volumes:
+      - .:/app
+      - /app/node_modules

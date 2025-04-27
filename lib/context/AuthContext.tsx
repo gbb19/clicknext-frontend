@@ -59,7 +59,7 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
         const parsedUser = JSON.parse(userData);
         setUser(parsedUser);
         setIsAuthenticated(true);
-        router.push("/workspace");
+        router.push("/board");
       } else {
         setUser(null);
         setIsAuthenticated(false);

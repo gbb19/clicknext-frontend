@@ -1,13 +1,12 @@
-// app/workspace/layout.tsx
 "use client";
 import { ReactNode } from "react";
 import Navbar from "@/components/layout/Navbar"; // นำเข้า usePathname
 
-interface WorkspaceLayoutProps {
+interface BoardLayoutProps {
   children: ReactNode;
 }
 
-export default function WorkspaceLayout({ children }: WorkspaceLayoutProps) {
+export default function BoardLayout({ children }: BoardLayoutProps) {
   return (
     <div>
       <Navbar />

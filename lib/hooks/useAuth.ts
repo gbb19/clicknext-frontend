@@ -31,7 +31,7 @@ export function useAuthActions() {
 
       setUser(user);
       setIsAuthenticated(true);
-      router.push("/workspace");
+      router.push("/board");
       return user;
       // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (err) {

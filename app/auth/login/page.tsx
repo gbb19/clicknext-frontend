@@ -11,7 +11,7 @@ export default function LoginPage() {
 
   useEffect(() => {
     if (isAuthenticated && !loading) {
-      router.push("/workspace");
+      router.push("/board");
     }
     console.log(user);
   }, [isAuthenticated, loading, router]);

@@ -12,7 +12,7 @@ export default function RegisterPage() {
   useEffect(() => {
     // ถ้า user ล็อกอินแล้ว ให้ redirect ไปที่หน้า dashboard
     if (isAuthenticated && !loading) {
-      router.push("/workspace");
+      router.push("/board");
     }
   }, [isAuthenticated, loading, router]);
 
